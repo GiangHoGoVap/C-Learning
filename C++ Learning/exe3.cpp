@@ -1,24 +1,25 @@
 #include <iostream>
 using namespace std;
+
 int main()
-{   int N;
-	int IntNum[N];
-	int max;
-	cout <<"how many numbers do you want ? ";
-	cin>>N;
-	for (int i=0;i<N;i++)
+{   
+	int N, max;
+	cout << "How many numbers do you want? ";
+	cin >> N;
+	int arr[N];
+	for (int i = 0; i < N; i++)
 	{
-	cout <<" Enter "<< N <<" numbers : ";
-	cin>> IntNum[i];
+		cout << "Enter ["<< i <<"] number: ";
+		cin >> arr[i];
 	}
-	max = IntNum[0];
-	for(int i =1;i <= N-1;i++)
+	max = arr[0];
+	for (int i = 1; i <= N - 1; i++)
     {
-    if(IntNum[i]>max)
-    {
-    max = IntNum[i];
+    	if (arr[i] > max)
+    	{
+    		max = arr[i];
+    	}
     }
-    }
-	cout<<"The largest number is : "<<max;	
+	cout << "The largest number is: " << max << endl;	
 	return 0;
 }

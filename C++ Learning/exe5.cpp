@@ -4,7 +4,7 @@ using namespace std;
 float power(float x, int y)  
 {  
     float temp;  
-    if(y == 0)  
+    if (y == 0)  
         return 1;  
     temp = power(x, y / 2);  
     if (y % 2 == 0)  
@@ -26,6 +26,6 @@ int main()
     cin >> x;
     cout << "Enter y ";
     cin >> y;
-    cout << "x^y = " << power(x, y);  
+    cout << "x^y = " << power(x, y) << endl;  
     return 0;  
 }
